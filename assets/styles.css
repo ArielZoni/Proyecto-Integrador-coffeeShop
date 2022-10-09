@@ -51,13 +51,13 @@ section{
     padding: 2rem 7%;
 }
 
-.header{
-    background: var(--nav);
+.header{    
+    background: linear-gradient(to bottom, #222229, var(--bg));
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 7%;
-    border-bottom: var(--border);
+    
     top: 0;
     left: 0%;
     right: 0;
@@ -216,7 +216,10 @@ section{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color: var(--nav-lks);
+    background: linear-gradient(to top, var(--main-color), var(--nav-lks));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .home .content p{
