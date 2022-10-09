@@ -7,6 +7,7 @@
     --nav: #171719;
     --nav-lks: #fff;
     --border: .1rem solid rgba(255,255,255, .3);
+    --texto: #ccc;
     
 }
 
@@ -46,6 +47,10 @@ body{
     background: var(--bg);
 }
 
+section{
+    padding: 2rem 7%;
+}
+
 .header{
     background: var(--nav);
     display: flex;
@@ -57,10 +62,15 @@ body{
     left: 0%;
     right: 0;
     z-index: 1000;
+    position: fixed;
 }
 
 .header .logo img{
     height: 6rem;
+}
+
+.header .logo img:hover{
+    transform: scale(1.1);
 }
 
 .header .navbar a{
@@ -190,9 +200,400 @@ body{
     text-align: center;
 }
 
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../assets/img/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--nav-lks);
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: var(--nav-lks);    
+}
+
+.encabezado{
+    text-align: center;
+    color: var(--nav-lks);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.encabezado span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.nosotros .encabezado-info{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;    
+    border-radius: 2rem;
+}
+
+.nosotros .encabezado-info .imagen{
+    flex: 1 1 45rem;
+}
+
+.nosotros .encabezado-info .imagen img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.nosotros .encabezado-info .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.nosotros .encabezado-info .content h3{
+    font-size: 3rem;
+    color: var(--nav-lks);
+    text-align: center;
+}
+
+.nosotros .encabezado-info .content p{
+    font-size: 1.4rem;
+    color: var(--texto);
+    padding: 1 rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: var(--nav-lks);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .precio{
+    color: var(--nav-lks);
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-container .box .precio span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background: var(--black);
+}
+
+.menu .box-container .box img:hover{
+    transform: scale(1.2);
+}
+
+.productos .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
 
 
+.productos .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.productos .box-container .box .iconos a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: var(--nav-lks);
+    margin: .3rem;  
+}
+
+.productos .box-container .box .iconos a:hover{
+    background: var(--main-color);
+}
+
+.productos .box-container .box .imagen{
+    padding: 2.5rem 0;
+}
+
+.productos .box-container .box .imagen img{
+    height: 25rem;
+}
+
+.productos .box-container .box .imagen img:hover{
+    transform: scale(1.1);
+}
+
+.productos .box-container .box:hover{
+    background: var(--black);
+}
+
+.productos .box-container .box .content h3{
+    color: var(--nav-lks);
+    font-size: 2.5rem;
+}
+
+.productos .box-container .box .content .estrellas{
+    padding: 1.5rem;
+}
+
+.productos .box-container .box .content .estrellas i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.productos .box-container .box .content .precio{
+    color: var(--nav-lks);
+    font-size: 2.5rem;    
+}
+
+.productos .box-container .box .content .precio span{    
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;    
+}
+
+.opiniones .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.opiniones .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.opiniones .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--texto);
+    padding: 2rem 0;
+}
+
+.opiniones .box-container .box .usuario{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.opiniones .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--nav-lks);
+}
+
+.opiniones .box-container .box .estrellas i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.contacto .contacto-info{
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+
+.contacto .contacto-info .mapa{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contacto .contacto-info form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contacto .contacto-info form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: var(--nav-lks);
+}
 
 
+.contacto .contacto-info form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+    border-radius: 2rem;
+}
+
+.contacto .contacto-info form .inputBox span{
+    color: var(--nav-lks);
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+
+.contacto .contacto-info form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--nav-lks);
+    text-transform: none;
+    background: none;
+}
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box{
+    border: var(--border);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.blogs .box-container .box .imagen{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.blogs .box-container .box .imagen img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.blogs .box-container .box:hover .imagen img{
+    transform: scale(1.2);    
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .titulo{
+    font-size: 2.3rem;
+    line-height: 1.5;
+    color: var(--nav-lks);    
+}
+
+.blogs .box-container .box .content .titulo:hover{
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span{
+    color: var(--main-color);
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--texto);
+    text-align: justify;
+    padding: 1rem;
+}
+
+.footer{
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .redes{
+    padding: 1rem 0;
+}
+
+.footer .redes a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--nav-lks);
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .redes a:hover{
+    color: var(--main-color);
+    transform: scale(1.1);
+}
+
+.footer .footer-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.footer .footer-links a{
+    padding: .7rem 2rem;
+    color: var(--nav-lks);
+    border: var(--border);
+    font-size: 1.6rem;
+}
+
+.footer .footer-links a:hover{
+    transform: scale(1.1);
+}
+
+.footer .creditos{
+    font-size: 2rem;
+    color: var(--nav-lks);
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .creditos span{
+    color: var(--main-color);
+    font-weight:500;
+}
 
 
