@@ -9,74 +9,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/styles.css"/>
     <link rel="icon" href="./assets/img/logo-coffee.png">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
   </head>
   <body>
+    
     <header class="header">
-      <a href="#" class="logo">
-        <img src="./assets/img/logo-coffee.png" alt="logo coffee"
+      <a href="#" class="logo"> <img src="./assets/img/logo-coffee.png" alt="logo coffee"
       /></a>
 
       <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#menu">Menu</a>
-        <a href="#productos">Productos</a>
-        <a href="#opiniones">Opiniones</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#blogs">Blogs</a>
+
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="navbar-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>        
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>        
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contacto">Contacto</a></li>   
+        </ul>
+        
+        <label for="cart-toggle" class="cart-label">
+          <i class="fas fa-shopping-cart"></i>
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+  
+        <div class="cart-items-conteiner">
+              <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="./assets/img/cart-item-1.png" alt="semillas">
+                  <div class="content">
+                      <h3>c/ Natural</h3>
+                      <div class="precio">$250/-</div>
+                  </div>
+              </div>
+  
+              <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="./assets/img/cart-item-2.png" alt="semillas">
+                  <div class="content">
+                      <h3>c/ Tostado</h3>
+                      <div class="precio">350/-</div>
+                  </div>
+              </div>
+  
+              <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="./assets/img/cart-item-3.png" alt="semillas">
+                  <div class="content">
+                      <h3>c/ Mixto</h3>
+                      <div class="precio">$450/-</div>
+                  </div>
+              </div>
+  
+              <div class="cart-item">
+                  <span class="fas fa-times"></span>
+                  <img src="./assets/img/cart-item-4.png" alt="semillas">
+                  <div class="content">
+                      <h3>c/ Semi Tostado</h3>
+                      <div class="precio">$300/-</div>
+                  </div>
+              </div>
+  
+              <div class="divider"></div>
+  
+              <div class="cart-total">
+                <p>Total a pagar=</p>
+                <span> $1350/-</span>
+              </div>  
+              <button class="btn">Efectuar Pago</button>
+          </div>
       </nav>
-
-      <div class="iconos">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="card-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-      </div>
-
-      <div class="search-form">
-        <input type="search" id="search-box" placeholder="Buscar aqui..." />
-        <label for="search-box" class="fas fa-search"></label>
-      </div>
-
-      <!--<div class="cart-items-conteiner">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="./assets/img/cart-item-1.png" alt="semillas ">
-                <div class="content">
-                    <h3>Cafe al Natural</h3>
-                    <div class="precio">$250/-</div>
-                </div>
-            </div>
-
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="./assets/img/cart-item-2.png" alt="semillas ">
-                <div class="content">
-                    <h3>Cafe Tostado</h3>
-                    <div class="precio">350/-</div>
-                </div>
-            </div>
-
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="./assets/img/cart-item-3.png" alt="semillas ">
-                <div class="content">
-                    <h3>Cafe Mixto</h3>
-                    <div class="precio">$450/-</div>
-                </div>
-            </div>
-
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="./assets/img/cart-item-4.png" alt="semillas ">
-                <div class="content">
-                    <h3>Cafe Semi Tostado</h3>
-                    <div class="precio">$300/-</div>
-                </div>
-            </div>
-
-            <a href="#" class="btn">Efectuar Pago</a>
-
-        </div>-->
     </header>
 
     <section class="home" id="home">
@@ -317,38 +325,6 @@
       </div>
     </section>
 
-    <section class="contacto" id="contacto">
-      <h1 class="encabezado"><span>Contactanos</span></h1>
-
-      <div class="contacto-info">
-        <iframe
-          class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55742.579309884684!2d-59.700609480460386!3d-29.167288724238276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eba9a3ba2dbab%3A0x350cd5b5c9792e95!2sReconquista%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1665253519749!5m2!1ses-419!2sar"
-          allowfullscreen=""
-          loading="lazy"
-        >
-        </iframe>
-
-        <form action="">
-          <h3>Pongase en contacto con nosotros</h3>
-          <div class="inputBox">
-            <span class="fa fa fa-user"></span>
-            <input type="text" placeholder="nombre" />
-          </div>
-          <div class="inputBox">
-            <span class="fa fa fa-envelope"></span>
-            <input type="email" placeholder="email" />
-          </div>
-          <div class="inputBox">
-            <span class="fa fa fa-phone"></span>
-            <input type="number" placeholder="number" />
-          </div>
-
-          <input type="submit" value="contactanos" class="btn" />
-        </form>
-      </div>
-    </section>
-
     <section class="blogs" id="blogs">
       <h1 class="encabezado"><span>nuestro</span> Blogs</h1>
 
@@ -411,6 +387,42 @@
             <a href="#" class="btn">leer mas</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h1 class="encabezado"><span>Contactanos</span></h1>
+
+      <div class="contacto-info">
+        <iframe
+          class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55742.579309884684!2d-59.700609480460386!3d-29.167288724238276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eba9a3ba2dbab%3A0x350cd5b5c9792e95!2sReconquista%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1665253519749!5m2!1ses-419!2sar"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+
+        <form action="">
+          <h3>Pongase en contacto con nosotros</h3>
+          <div class="inputBox">
+            <span class="fa fa fa-user"></span>
+            <input type="text" placeholder="nombres" />
+          </div>
+          <div class="inputBox">
+            <span class="fa fa fa-user"></span>
+            <input type="text" placeholder="apellido" />
+          </div>
+          <div class="inputBox">
+            <span class="fa fa fa-envelope"></span>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="inputBox">
+            <span class="fa fa fa-phone"></span>
+            <input type="number" placeholder="numero" />
+          </div>
+
+          <input type="submit" value="contactanos" class="btn" />
+        </form>
       </div>
     </section>
 

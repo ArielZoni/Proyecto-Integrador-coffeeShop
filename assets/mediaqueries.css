@@ -1,0 +1,168 @@
+/*Estilos para tablets*/
+@media (max-width:991px){
+
+	html{
+		font-size:55%;
+	}
+
+	.header{
+		padding:1.5rem 2.5rem;
+	}
+
+	section{
+		padding:2rem;
+	}   
+	
+	.navbar{   
+		gap: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+    .navbar .navbar-list{
+		position: absolute;
+        top: 100%;
+		right:0;
+		background: var(--black);
+        width:30rem;
+		height: calc(100vh -9.5rem);
+        flex-direction: column;
+		align-items:flex-start;
+        border: var(--border);
+        border-top: 0;
+        border-radius: 0 0 2rem 2rem;
+		display: none;
+        z-index: 2;
+	}
+
+    .header .navbar li{
+        color: #fff;
+		display: block;
+	}
+
+    .header .navbar a{        
+		display: block;
+		margin: 1.5rem;
+		padding:.5rem;
+		font-size: 2rem;
+    } 
+
+	.menu-label{		
+		display: flex;
+        order: 2;
+        cursor: pointer;
+	}
+
+    #menu-toggle:checked + .navbar-list{
+        display: flex;
+    }
+
+	.home{
+		width: 100%;		
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		background:var( --bg);
+	}
+
+	.cart-items-conteiner{
+		width: 60%;
+	}
+
+	.content{
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.nosotros .encabezado-info .content p{
+		text-align: center;
+		text-align: unset;		
+	}
+
+	.menu{
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu .box-container{
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/*Estilos para tablets*/
+	@media (max-width:576px){
+		.navbar{
+			gap: 1rem;
+		}
+
+		.home{
+			margin-top: 1rem;
+		}
+
+		.home .content h3{
+			font-size: 5rem;
+		}
+
+		.home .content p{
+			font-size: 1.7rem;
+		}
+
+		.cart-items-conteiner{
+			width: 100%;
+		}
+
+		.btn{
+			margin-top: 1rem;
+			display: inline-block;
+			padding: .5rem 2rem;
+			font-size: 1.5rem;			
+			border-radius: 4rem;
+		}
+
+		.nosotros{
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.encabezado{
+			padding-bottom: 2.5rem;
+    		font-size: 3rem;
+		}
+				
+		.menu .box-container .box{
+			padding: 2rem;
+		}
+
+		.blogs .box-container .box .content p{
+			text-align: center;
+		}
+
+		.footer-links{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			max-width: 100%;
+
+		}
+
+		html{
+			font-size: 50%;
+		}
+	}
+
+
+
+
+
+}
