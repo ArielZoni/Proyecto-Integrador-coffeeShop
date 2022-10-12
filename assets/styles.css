@@ -89,14 +89,20 @@ section{
 
 .navbar-list li{
     margin: 0 1rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--nav-lks);
     display: inline-block;
 }
 
+.navbar-list li:first-child > a{
+    color: var(--nav-lks);
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
 .header .navbar a{
     margin: 0 1rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--nav-lks);
 }
 
@@ -116,20 +122,12 @@ section{
     margin-left: 2rem;
 }
 
-.menu-label:hover{
-    color: var(--main-color);
-}
-
 .cart-label{
     display: flex;
     color: var(--nav-lks);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
-}
-
-.cart-label:hover{
-    color: var(--main-color);
 }
 
 #cart-toggle, #menu-toggle,
@@ -156,6 +154,16 @@ section{
     padding-bottom: 3rem;
     display: none;
     z-index: 2;    
+}
+
+.cart-items-conteiner .encabezado{
+    text-align: center;
+    color: var(--nav-lks);
+    text-transform: uppercase;
+    text-decoration:underline;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+    font-size: 2rem;
 }
 
 .cart-items-conteiner::-webkit-scrollbar{
