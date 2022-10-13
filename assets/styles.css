@@ -100,6 +100,11 @@ section{
     font-weight: 900;
 }
 
+.navbar-list a span{
+    color:var(--main-color);
+    font-weight: 900;
+}
+
 .header .navbar a{
     margin: 0 1rem;
     font-size: 1.5rem;
@@ -288,7 +293,7 @@ section{
 }
 
 .home .content h3{
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
     background: linear-gradient(to top, var(--main-color), var(--nav-lks));
     background-clip: text;
@@ -625,6 +630,7 @@ section{
 
 .footer .redes{
     padding: 1rem 0;
+    gap: 2rem;
 }
 
 .footer .redes a{
@@ -677,6 +683,27 @@ section{
 
 #cart-toggle:checked + .cart-items-conteiner{
     display: flex;
+}
+
+.content .content--btn{
+    display: flex;
+    gap: 11rem;    
+}
+
+.btn--register{
+    background: linear-gradient(to bottom, #222229, #cecfd6);
+}
+
+.main{
+    max-width: 1200px;
+    height: 85vh;
+    margin: 0 auto;
+}
+
+.main_menu{
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 

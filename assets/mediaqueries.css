@@ -79,6 +79,11 @@
 		align-items: center;
 	}
 
+	.content .content--btn{
+		align-items: center;
+		justify-content: center;
+	}
+
 	.nosotros .encabezado-info .content p{
 		text-align: center;
 		text-align: unset;		
@@ -98,6 +103,10 @@
 		align-items: center;
 	}
 
+	.form__titulo{
+		margin-top: 15rem;
+	}
+
 }
 
 	/*Estilos para smartphone*/
@@ -108,6 +117,12 @@
 
 		.home{
 			margin-top: 1rem;
+		}
+
+		.content .content--btn{
+			align-items: center;
+			justify-content: center;
+			gap: 1.5rem;
 		}
 
 		.home .content h3{
@@ -162,6 +177,18 @@
 
 		html{
 			font-size: 50%;
+		}
+
+		.form__conteiner .btn{
+			margin-top: 1rem;
+			display: inline-block;
+			padding: .5rem 2rem;
+			font-size: 1.5rem;			
+			border-radius: 4rem;
+		}
+
+		.form__conteiner .form__input{
+			padding: 10px 10px 10px 10px;
 		}
 	}
 
