@@ -1,0 +1,64 @@
+.form__conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 75vh;
+}
+
+.form__titulo{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(to top, var(--main-color), var(--nav-lks));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.form__input{
+    padding: 15px 35px 15px 15px;
+    border-radius: 1rem;
+    background-color: #222229;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.form__conteiner .btn--register{
+    background: linear-gradient(to bottom, var( --black), var( --texto));
+}
+
+.navbar_user{
+    width: 25px;
+    cursor: pointer;    
+}
+
+.main-menu .menu .encabezado{
+    text-align: center;
+    color: var(--nav-lks);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.encabezado span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
+.navbar .cart-label{
+    display: flex;
+    color: var(--nav-lks);
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.navbar .cart-label:hover{
+    color: var(--main-color);
+
+}
