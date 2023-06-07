@@ -1,198 +1,206 @@
 /*Estilos para tablets*/
-@media (max-width:991px){
-
-	html{
-		font-size:55%;
+@media (max-width: 991px) {
+	html {
+		font-size: 55%;
 	}
 
-	.header{
-		padding:1.5rem 2.5rem;
+	.header {
+		padding: 1.5rem 2.5rem;
 	}
 
-	section{
-		padding:2rem;
-	}   
-	
-	.navbar{   
+	section {
+		padding: 2rem;
+	}
+
+	.navbar {
 		gap: 25px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
-    .navbar .navbar-list{
+	.navbar .navbar-list {
 		position: absolute;
-        top: 100%;
+		top: 100%;
 		top: 9rem;
-		right:0;
+		right: 0;
 		background: var(--black);
-        width:30rem;
+		width: 30rem;
 		height: calc(100vh -9rem);
-        flex-direction: column;
-		align-items:flex-start;
-        border: var(--border);
-        border-top: 0;
-        border-radius: 0 0 2rem 2rem;
+		flex-direction: column;
+		align-items: flex-start;
+		border: var(--border);
+		border-top: 0;
+		border-radius: 0 0 2rem 2rem;
 		display: none;
-        z-index: 2;
+		z-index: 2;
 	}
 
-    .header .navbar li{
-        color: #fff;
+	.header .navbar li {
+		color: #fff;
 		display: block;
 	}
 
-    .header .navbar a{        
+	.header .navbar a {
 		display: block;
 		margin: 1.5rem;
-		padding:.5rem;
+		padding: 0.5rem;
 		font-size: 2rem;
-    } 
-
-	.menu-label{		
-		display: flex;
-        order: 2;
-        cursor: pointer;
 	}
 
-    #menu-toggle:checked + .navbar-list{
-        display: flex;
-    }
+	.menu-label {
+		display: flex;
+		order: 2;
+		cursor: pointer;
+	}
 
-	.home{
-		width: 100%;		
+	#menu-toggle:checked + .navbar-list {
+		display: flex;
+	}
+
+	.home {
+		width: 100%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
-		background:var( --bg);
+		background: var(--bg);
 	}
 
-	.cart-items-conteiner{
+	.cart-items-conteiner {
 		width: 60%;
 		top: 9rem;
 	}
 
-	.content{
+	.content {
 		width: 100%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.content .content--btn{
+	.content .content--btn {
 		align-items: center;
 		justify-content: center;
 	}
 
-	.nosotros .encabezado-info .content p{
+	.nosotros .encabezado-info .content p {
 		text-align: center;
-		text-align: unset;		
+		text-align: unset;
 	}
 
-	.menu{
+	.menu {
 		width: 100%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.menu .box-container{
+	.menu .box-container {
 		width: 100%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.form__titulo{
+	.welcome__img {
+		max-width: 400px;
+	}
+
+	.form__titulo {
 		margin-top: 15rem;
 	}
-
 }
 
-	/*Estilos para smartphone*/
-	@media (max-width:576px){
-		.navbar{
-			gap: 1rem;
-		}
-
-		.home{
-			margin-top: 1rem;
-		}
-
-		.content .content--btn{
-			align-items: center;
-			justify-content: center;
-			gap: 1.5rem;
-		}
-
-		.home .content h3{
-			font-size: 5rem;
-		}
-
-		.home .content p{
-			font-size: 1.7rem;
-		}
-
-		.cart-items-conteiner{
-			width: 100%;
-		}
-
-		.btn{
-			margin-top: 1rem;
-			display: inline-block;
-			padding: .5rem 2rem;
-			font-size: 1.5rem;			
-			border-radius: 4rem;
-		}
-
-		.nosotros{
-			max-width: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.encabezado{
-			padding-bottom: 2.5rem;
-    		font-size: 3rem;
-		}
-				
-		.menu .box-container .box{
-			padding: 2rem;
-		}
-
-		.blogs .box-container .box .content p{
-			text-align: center;
-		}
-
-		.footer-links{
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			max-width: 100%;
-
-		}
-
-		html{
-			font-size: 50%;
-		}
-
-		.form__conteiner .btn{
-			margin-top: 1rem;
-			display: inline-block;
-			padding: .5rem 2rem;
-			font-size: 1.5rem;			
-			border-radius: 4rem;
-		}
-
-		.form__conteiner .form__input{
-			padding: 10px 10px 10px 10px;
-		}
+/*Estilos para smartphone*/
+@media (max-width: 576px) {
+	.navbar {
+		gap: 1rem;
 	}
 
+	.home {
+		margin-top: 1rem;
+	}
 
+	.content .content--btn {
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+	}
 
+	.home .content h3 {
+		font-size: 5rem;
+	}
 
+	.home .content p {
+		font-size: 1.7rem;
+	}
 
+	.cart-items-conteiner {
+		width: 100%;
+	}
+
+	.btn {
+		margin-top: 1rem;
+		display: inline-block;
+		padding: 0.5rem 2rem;
+		font-size: 1.5rem;
+		border-radius: 4rem;
+	}
+
+	.nosotros {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.encabezado {
+		padding-bottom: 2.5rem;
+		font-size: 3rem;
+	}
+
+	.menu .box-container .box {
+		padding: 2rem;
+	}
+
+	.blogs .box-container .box .content p {
+		text-align: center;
+	}
+
+	.footer-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 100%;
+	}
+
+	.welcome {
+		max-width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.welcome__img {
+		max-width: 340px;
+	}
+
+	html {
+		font-size: 50%;
+	}
+
+	.form__conteiner .btn {
+		margin-top: 1rem;
+		display: inline-block;
+		padding: 0.5rem 2rem;
+		font-size: 1.5rem;
+		border-radius: 4rem;
+	}
+
+	.form__conteiner .form__input {
+		padding: 10px 10px 10px 10px;
+	}
+}
