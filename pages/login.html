@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <a href="../index.html" class="logo"> <img src="../assets/img/logo-coffee.png" alt="logo coffee" /></a>
 
@@ -30,14 +29,23 @@
   </header>
 
   <main class="main">
-    <form class="form__conteiner">
+    <form class="form__conteiner" id="login--form" novalidate>
+
       <h1 class="form__titulo">Iniciar Secion</h1>
 
-      <input type="email" placeholder="Email" class="form__input">
+      <!-- Email -->
+      <div class="form__field">
+        <input type="email" placeholder="Email" class="form__input" id="email" autocomplete="off" />
+      </div>
 
-      <input type="password" placeholder="Password" class="form__input">
+      <!-- Contraseña -->
+      <div class="form__field">
+        <input type="password" placeholder="Password" class="form__input" id="password" autocomplete="off" />
+      </div>
 
-      <a href="../index.html" class="btn btn--register">Ingresar</a>
+      <small id="form__error"></small>
+      <input type="submit" class="btn--register" value="Iniciar Sesión" />
+      <p class="form--redirect">¿No tenés cuenta? <a class="link--gradient" href="./register.html">Registrate</a> </p>
     </form>
   </main>
 
@@ -59,6 +67,8 @@
 
     <div class="creditos">creado por <span>Ariel Francisco Zoni</span> | todos los derechos reservados</div>
   </footer>
+
+  <script src="..//assets/login.js"></script>
 </body>
 
 </html>

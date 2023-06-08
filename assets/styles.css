@@ -637,6 +637,8 @@ section {
     margin: 0 auto;
 }
 
+/* Styles page Welcome*/
+
 #logout-message {
     display: flex;
     justify-content: center;
@@ -691,13 +693,14 @@ section {
     max-width: 700px;
 }
 
-.link--grandient {
+.link--gradient {
     background: var(--main-color);
     background: -webkit-linear-gradient(135deg, var(--main-color) 0%, var(--nav-lks) 100%);
     background: linear-gradient(135deg, var(--main-color) 0%, var(--nav-lks) 100%);
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
+    font-weight: 900;
 }
 
 .footer {

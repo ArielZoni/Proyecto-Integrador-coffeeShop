@@ -1,42 +1,77 @@
-.form__conteiner{
+.form__conteiner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    height: 75vh;
+    gap: 10px;
+    margin-top: 30px;
 }
 
-.form__titulo{
+.form__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.form__titulo {
     font-size: 2.5rem;
     text-transform: uppercase;
     background: linear-gradient(to top, var(--main-color), var(--nav-lks));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin-top: 10rem;
+    margin-top: 10px;
     margin-bottom: 3rem;
 }
 
-.form__input{
+.form__input {
     padding: 15px 35px 15px 15px;
-    border-radius: 1rem;
+    border-radius: 8px;
     background-color: #222229;
     color: white;
     border: none;
     outline: none;
+    width: 350px;
+    margin: 5px 0px;
 }
 
-.form__conteiner .btn--register{
-    background: linear-gradient(to bottom, var( --black), var( --texto));
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 90px #252525 inset !important;
 }
 
-.navbar_user{
+.form__conteiner .btn--register {
+    background: linear-gradient(to bottom, var(--black), var(--texto));
+    padding: 15px 35px 15px 15px;
+    border-radius: 8px;
+    background-color: #222229;
+    color: white;
+    border: none;
+    outline: none;
+    width: 300px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.form__conteiner .btn--register:hover {
+    transform: scale(1.1);
+}
+
+.form--redirect {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.navbar_user {
     width: 25px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-.main-menu .menu .encabezado{
+.main-menu .menu .encabezado {
     text-align: center;
     color: var(--nav-lks);
     text-transform: uppercase;
@@ -44,13 +79,12 @@
     font-size: 4rem;
 }
 
-.encabezado span{
+.encabezado span {
     color: var(--main-color);
     text-transform: uppercase;
 }
 
-
-.navbar .cart-label{
+.navbar .cart-label {
     display: flex;
     color: var(--nav-lks);
     cursor: pointer;
@@ -58,7 +92,30 @@
     margin-left: 2rem;
 }
 
-.navbar .cart-label:hover{
+.navbar .cart-label:hover {
     color: var(--main-color);
+}
 
+/* Error / Success */
+.form__field.error input {
+    border: 1px solid #dc3545;
+}
+
+.form__field small {
+    color: #dc3545;
+    max-width: 350px;
+    text-align: center;
+    display: none;
+}
+
+.form__field.success input {
+    border: 1px solid #28a745;
+}
+
+#form__error {
+    color: #dc3545;
+    font-size: 1rem;
+    margin: 8px 0px;
+    max-width: 350px;
+    text-align: center;
 }

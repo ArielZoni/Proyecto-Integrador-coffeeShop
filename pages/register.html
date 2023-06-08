@@ -1,71 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registrarse</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="icon" href="../assets/img/logo-coffee.png">
-    <link rel="stylesheet" href="../assets/registro.css">
-    <link rel="stylesheet" href="../assets/mediaqueries.css">
-        
-  </head>
-  <body>
-    
-    <header class="header">
-      <a href="../index.html" class="logo"> <img src="../assets/img/logo-coffee.png" alt="logo coffee"
-      /></a>
-      
-      <nav class="navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registrarse</title>
 
-        <label for="menu-toggle" class="menu-label">
-          <i class="fa fa-bars"></i>
-        </label>
-        <input type="checkbox" id="menu-toggle" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" href="../assets/img/logo-coffee.png">
+  <link rel="stylesheet" href="../assets/registro.css">
+  <link rel="stylesheet" href="../assets/mediaqueries.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="../index.html" class="logo"> <img src="../assets/img/logo-coffee.png" alt="logo coffee" /></a>
+
+    <nav class="navbar">
+
+      <label for="menu-toggle" class="menu-label">
+        <i class="fa fa-bars"></i>
+      </label>
+      <input type="checkbox" id="menu-toggle" />
 
 
-        <ul class="navbar-list">
-          <li><a href="../index.html">Home</a></li>          
-        </ul>
+      <ul class="navbar-list">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
     </nav>
-    
-    </header>
 
-    <main class="main">
-        <form class="form__conteiner">
-            <h1 class="form__titulo">Crea tu cuenta</h1>
+  </header>
 
-            <input type="text" placeholder="Nombre" class="form__input">
+  <main class="main">
+    <form class="form__conteiner" id="register-form" novalidate>
 
-            <input type="email" placeholder="Email" class="form__input">
+      <h1 class="form__titulo">Crea tu cuenta</h1>
 
-            <input type="password" placeholder="Password" class="form__input">
+      <!-- Nombre -->
+      <div class="form__field">
+        <input type="text" placeholder="Nombre" class="form__input" id="name" autocomplete="off" />
+        <small></small>
+      </div>
 
-            <input type="text" placeholder="Telefono" class="form__input">
-            <a href="../index.html" class="btn btn--register">Ingresar</a>
-        </form>
-    </main>   
-        
-        
+      <!-- Apellido -->
+      <div class="form__field">
+        <input type="text" placeholder="Apellido" class="form__input" id="lastName" autocomplete="off" />
+        <small></small>
+      </div>
 
-    <footer class="footer">
 
-      <div class="redes">
-        <a href="#" class="fab fa-facebook"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>        
-      </div>      
+      <!-- Email-->
+      <div class="form__field">
+        <input type="email" placeholder="Email" class="form__input" id="email" autocomplete="off" />
+        <small></small>
+      </div>
 
-      <div class="footer-links">
-        <a href="#">Terminos de uso</a>
-        <a href="#">Trabaja con Nosotros</a>
-        <a href="#">Soporte</a>
-        </div>
+      <!-- Password-->
+      <div class="form__field">
+        <input type="password" placeholder="Password" class="form__input" id="password" autocomplete="off" />
+        <small></small>
+      </div>
 
-      <div class="creditos">creado por <span>Ariel Francisco Zoni</span> | todos los derechos reservados</div>
-    </footer>
-  </body>
+      <!-- Telefono -->
+      <div class="form__field">
+        <input type="text" placeholder="Telefono" class="form__input" id="phone" autocomplete="off" />
+        <small></small>
+      </div>
+
+      <input type="submit" class="btn--register" value="Registrarse" />
+      <p class="form--redirect">¿Ya tenés cuenta? <a class="link--gradient" href="./login.html">Inicia sesión</a> </p>
+
+    </form>
+  </main>
+
+
+
+  <footer class="footer">
+
+    <div class="redes">
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Terminos de uso</a>
+      <a href="#">Trabaja con Nosotros</a>
+      <a href="#">Soporte</a>
+    </div>
+
+    <div class="creditos">creado por <span>Ariel Francisco Zoni</span> | todos los derechos reservados</div>
+  </footer>
+  <script src="../assets/register.js"></script>
+
+</body>
+
 </html>
