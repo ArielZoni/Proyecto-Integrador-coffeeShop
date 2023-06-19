@@ -20,10 +20,14 @@
 
       <nav class="navbar">
 
-        <label for="menu-toggle" class="menu-label">
+        <div class="menu-label">
+          <img src="./assets/img/menu.png" alt="menu" class="menu-icon">
+        </div>
+
+        <!-- <label for="menu-toggle" class="menu-label">
           <i class="fa fa-bars"></i>
         </label>
-        <input type="checkbox" id="menu-toggle" />
+        <input type="checkbox" id="menu-toggle" /> -->
 
 
         <ul class="navbar-list">
@@ -36,13 +40,38 @@
           <li><a href="#contacto">Contacto</a></li>
           <li><a href="./pages/login.html"><span>Login</span> </a></li>    
         </ul>
-        
-        <label for="cart-toggle" class="cart-label">
-          <i class="fas fa-shopping-cart"></i>
+
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-bubble">0</div>
+          </i>          
+        </div>        
+
+
+        <!-- <label for="cart-toggle" class="cart-label">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <div class="cart-bubble">0</div>
         </label>
-        <input type="checkbox" id="cart-toggle" />
-  
+        <input type="checkbox" id="cart-toggle" /> -->
+
+
+
         <div class="cart-items-conteiner">
+          <h1 class="encabezado"><span>Tus</span> Compras</h1>
+
+          <span class="divider"></span>
+
+          <div class="cart-total">
+            <p>Total a pagar:</p>
+            <span class="total"> $1350/-</span>
+          </div>  
+          <button class="btn">Efectuar Pago</button>
+          <button class="btn btn-delete">Vaciar Carrito</button>
+      </div>
+
+      <div class="overlay"></div>
+  
+        <!-- <div class="cart-items-conteiner">
           <h1 class="encabezado"><span>Tus</span> Compras</h1>
               <div class="cart-item">
                   <span class="fas fa-times"></span>
@@ -88,7 +117,9 @@
               </div>  
               <button class="btn">Efectuar Pago</button>
           </div>
-          <div class="overlay"></div>
+          <div class="overlay"></div> -->
+
+          
       </nav>
     </header>
 
@@ -133,6 +164,21 @@
           <a href="#" class="btn">Leer mas</a>          
         </div>
       </div>
+    </section>
+
+    <section class="productos">
+      <h1 class="encabezado"><span>Nuestros</span> Productos</h1>
+
+      <div class="categories">
+        <button class="category active">🍵Todas</button>
+        <button class="category" data-category="lates">🥤Lates</button>
+        <button class="category" data-category="cortado">☕Cortados</button>
+        <button class="category" data-category="negros">🍫Negros</button>
+        <button class="category" data-category="molidos">🧆Molidos</button>
+        <button class="category" data-category="granos">🌰En Granos 
+        </button>
+      </div>
+
     </section>
 
     <section class="menu" id="menu">
@@ -189,7 +235,7 @@
       <div class="box-container">
         <div class="box">
           <div class="iconos">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-eye"></a>
           </div>
@@ -208,12 +254,13 @@
               <i class="fas fa-star-half-alt"></i>
             </div>
             <div class="precio">$550 <span>$599</span></div>
+            <a href="#" class="btn">Añadir al carrito</a>
           </div>
         </div>
 
         <div class="box">
           <div class="iconos">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-eye"></a>
           </div>
@@ -232,12 +279,13 @@
               <i class="fas fa-star-half-alt"></i>
             </div>
             <div class="precio">$650 <span>$699</span></div>
+            <a href="#" class="btn">Añadir al carrito</a>
           </div>
         </div>
 
         <div class="box">
           <div class="iconos">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-eye"></a>
           </div>
@@ -256,6 +304,7 @@
               <i class="fas fa-star-half-alt"></i>
             </div>
             <div class="precio">$450 <span>$499</span></div>
+            <a href="#" class="btn">Añadir al carrito</a>
           </div>
         </div>
       </div>

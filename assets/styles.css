@@ -125,14 +125,44 @@ section {
     margin-left: 2rem;
 }
 
-.cart-label {
+/* .cart-label {
     display: flex;
     color: var(--nav-lks);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
+} */
+
+.cart-icon{
+    font-weight: 600;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-right: 1rem;
+  color: var(--nav-lks);
+  cursor: pointer;
+  position: relative;
+
 }
 
+.cart-bubble {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    text-align: center;
+    background: var(--main-color);
+    color: var(--nav-lks);
+    font-size: 10px;
+    font-weight: 500;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1px;
+    border-radius: 50%;
+  }
+  
+  /* Ocultar menu */
 #cart-toggle,
 #menu-toggle,
 .menu-label {
@@ -147,16 +177,18 @@ section {
     position: absolute;
     display: flex;
     flex-direction: column;
+    gap: 30px;
     top: 100%;
     right: 0;
     height: calc(100vh - 9.5rem);
     width: 35rem;
-    background: var(--texto);
+    background: linear-gradient(to bottom, var(--bg), #222229);
     padding: 0 1.5rem;
     border-radius: 0 0 2rem 2rem;
     overflow-y: scroll;
     padding-bottom: 3rem;
-    display: none;
+    /* para ocultar carrito */
+    display: none; 
     z-index: 2;
 }
 
@@ -399,6 +431,29 @@ section {
 .menu .box-container .box img:hover {
     transform: scale(1.2);
 }
+
+/* Producros por categorias */
+.categories{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.category {
+    background: var(--black);
+    border: none;
+    padding: 10px 15px;
+    color: var(--bg-white);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .active {
+    background: var(--main-color);
+  }
+
+
 
 .productos .box-container {
     display: grid;
