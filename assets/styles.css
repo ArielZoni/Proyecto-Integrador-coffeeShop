@@ -75,7 +75,7 @@ section {
 }
 
 .navbar {
-    gap: 350px;
+    gap: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,6 +569,47 @@ section {
     border-radius: 10px;
     cursor: pointer;
 }
+
+#galeria{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#galeria p{
+    font-size: 1.4rem;
+    color: var(--texto);
+    padding: 1 rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.galeria{
+    display: flex;
+    width: 800px;
+    height: 630px;
+}
+
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
+
 
 .opiniones .box-container {
     display: grid;
