@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./assets/styles.css"/>
-    <link rel="icon" href="./assets/img/logo-coffee.png">
-    <link rel="stylesheet" href="./assets/mediaqueries.css">
-    <link rel="stylesheet" href="./assets/animaciones.css">
-  </head>
-  <body>
-    
-    <header class="header">
-      <a href="./index.html" class="logo"> <img src="./assets/img/logo-coffee.png" alt="logo coffee"
-      /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Shop</title>
 
-      <nav class="navbar">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="icon" href="./assets/img/logo-coffee.png">
+  <link rel="stylesheet" href="./assets/mediaqueries.css">
+  <link rel="stylesheet" href="./assets/animaciones.css">
+</head>
 
-        <div class="menu-label">
-          <img src="./assets/img/menu.png" alt="menu" class="menu-icon">
-        </div>
+<body>
 
-        <!-- <label for="menu-toggle" class="menu-label">
+  <header class="header">
+    <a href="./index.html" class="logo"> <img src="./assets/img/logo-coffee.png" alt="logo coffee" /></a>
+
+    <nav class="navbar">
+
+      <div class="menu-label">
+        <img src="./assets/img/menu.png" alt="menu" class="menu-icon">
+      </div>
+
+      <!-- <label for="menu-toggle" class="menu-label">
           <i class="fa fa-bars"></i>
         </label>
         <input type="checkbox" id="menu-toggle" /> -->
 
 
-        <ul class="navbar-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>        
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#opiniones">Opiniones</a></li>        
-          <li><a href="#blogs">Blogs</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="./pages/login.html"><span>Login</span> </a></li>    
-        </ul>
+      <ul class="navbar-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#products">Productos</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="./pages/login.html"><span>Login</span> </a></li>
+      </ul>
 
-        <div class="cart-label">
-          <i class="fa-solid fa-cart-shopping cart-icon">
-            <div class="cart-bubble">0</div>
-          </i>          
-        </div>        
-
-
-        <!-- <label for="cart-toggle" class="cart-label">
-          <i class="fas fa-shopping-cart cart-icon"></i>
+      <div class="cart-label">
+        <i class="fa-solid fa-cart-shopping cart-icon">
           <div class="cart-bubble">0</div>
-        </label>
-        <input type="checkbox" id="cart-toggle" /> -->
+        </i>
+      </div>
 
 
 
-        <div class="cart-items-conteiner">
-          <h1 class="encabezado"><span>Tus</span> Compras</h1>
+      <div class="cart-items-conteiner">
 
-          <span class="divider"></span>
+        <h1 class="encabezado"><span>Tus</span> Compras</h1>
 
-          <div class="cart-total">
-            <p>Total a pagar:</p>
-            <span class="total"> $1350/-</span>
-          </div>  
-          <button class="btn">Efectuar Pago</button>
-          <button class="btn btn-delete">Vaciar Carrito</button>
+        <div class="cart-container"></div>
+
+        <span class="divider"></span>
+
+        <div class="cart-total">
+          <p>Total a pagar:</p>
+          <span class="total"> $1350/-</span>
+        </div>
+        <button class="btn-buy">Efectuar Pago</button>
+        <button class="btn-delete">Vaciar Carrito</button>
       </div>
 
       <div class="overlay"></div>
-  
-        <!-- <div class="cart-items-conteiner">
+
+      <!-- <div class="cart-items-conteiner">
           <h1 class="encabezado"><span>Tus</span> Compras</h1>
               <div class="cart-item">
                   <span class="fas fa-times"></span>
@@ -119,385 +116,383 @@
           </div>
           <div class="overlay"></div> -->
 
-          
-      </nav>
-    </header>
 
-    <section class="home" id="home">
-      <div class="content">
-        <h3>Creando nuevas formas de tomar Café</h3>
-        <p>
-          Si bebes cafe regularmente sabras la diferencia entre el cafe recien
-          hecho y el cafe viejo. Nuestro Objetivo es proporcionar los mejores
-          granos de cafes mas frescos de cada dia.
-        </p>
-        <div class="content--btn">
-          <a href="./pages/menus.html" class="btn">Obten el tuyo Ahora</a>
-          <a href="./pages/register.html" class="btn btn--register">Registrate</a>
-        </div>        
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="content">
+      <h3>Creando nuevas formas de tomar Café</h3>
+      <p>
+        Si bebes cafe regularmente sabras la diferencia entre el cafe recien
+        hecho y el cafe viejo. Nuestro Objetivo es proporcionar los mejores
+        granos de cafes mas frescos de cada dia.
+      </p>
+      <div class="content--btn">
+        <a href="./pages/menus.html" class="btn">Obten el tuyo Ahora</a>
+        <a href="./pages/register.html" class="btn btn--register">Registrate</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="nosotros" id="nosotros">
-      <h1 class="encabezado"><span>Sobre</span> Nosotros</h1>
+  <section class="nosotros" id="nosotros">
+    <h1 class="encabezado"><span>Sobre</span> Nosotros</h1>
 
-      <div class="encabezado-info">
+    <div class="encabezado-info">
+      <div class="imagen">
+        <img src="./assets/img/nosotros-img.jpeg" alt="nuestro cafe" />
+      </div>
+
+      <div class="content">
+        <h3>¿Que hace que nuestro cafe sea especial?</h3>
+        <p>
+          Lo que hace que nuestro café sea especial son sus características de
+          origen, sostenibilidad en su producción y preparación, es decir,
+          cumple con los estándares de calidad en todo su proceso, manteniendo
+          su calidad desde el momento en que es recogido por el caficultor,
+          hasta que es servido en una taza para disfrutar.
+        </p>
+
+        <p>
+          Esto significa que la calidad de nuestro café va más allá del
+          producto final servido en su taza. Su calidad, cuerpo y sabor es lo
+          mejor que probaras hoy.
+        </p>
+        <a href="#" class="btn">Leer mas</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- products -->
+  <section id="products">
+    <h1 class="encabezado"><span>Nuestros</span> Productos</h1>
+
+    <!-- categories -->
+    <div class="categories">
+      <button class="category active">🍵Todas</button>
+      <button class="category" data-category="lates">🥤Lates</button>
+      <button class="category" data-category="cortado">☕Cortados</button>
+      <button class="category" data-category="negros">🍫Negros</button>
+      <button class="category" data-category="molidos">🧆Molidos</button>
+      <button class="category" data-category="granos">🌰En Granos
+      </button>
+    </div>
+
+    <!-- products -->
+    <div class="products-container"></div>
+    <button class="btn-load">Ver Mas</button>
+
+  </section>
+
+  <!-- <section class="menu" id="menu">
+    <h1 class="encabezado"><span>Nuestro</span> Menu</h1>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="./assets/img/menu-1.png" alt="menu 1" />
+        <h3>Cafe con leche</h3>
+        <div class="precio">$250 <span>$299</span></div>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+
+      <div class="box">
+        <img src="./assets/img/menu-2.png" alt="menu 2" />
+        <h3>Cafe americano</h3>
+        <div class="precio">$200 <span>$249</span></div>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+
+      <div class="box">
+        <img src="./assets/img/menu-3.png" alt="menu 3" />
+        <h3>Cafe expreso</h3>
+        <div class="precio">$350 <span>$399</span></div>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+
+      <div class="box">
+        <img src="./assets/img/menu-4.png" alt="menu 4" />
+        <h3>Cappuccino</h3>
+        <div class="precio">$350 <span>$399</span></div>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+
+      <div class="box">
+        <img src="./assets/img/menu-5.png" alt="menu 5" />
+        <h3>Cafe au lait</h3>
+        <div class="precio">$250 <span>$299</span></div>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+
+      <div class="box">
+        <img src="./assets/img/menu-6.png" alt="menu 6" />
+        <h3>Cafe irish</h3>
+        <div class="precio">$450 <span>$499</span></div>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="productos" id="productos">
+    <h1 class="encabezado"><span>Nuestro</span> Productos</h1>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="iconos">
+          <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+
         <div class="imagen">
-          <img src="./assets/img/nosotros-img.jpeg" alt="nuestro cafe" />
+          <img src="./assets/img/product-1.png" alt="producto 1" />
         </div>
 
         <div class="content">
-          <h3>¿Que hace que nuestro cafe sea especial?</h3>
-          <p>
-            Lo que hace que nuestro café sea especial son sus características de
-            origen, sostenibilidad en su producción y preparación, es decir,
-            cumple con los estándares de calidad en todo su proceso, manteniendo
-            su calidad desde el momento en que es recogido por el caficultor,
-            hasta que es servido en una taza para disfrutar.
-          </p>
-
-          <p>
-            Esto significa que la calidad de nuestro café va más allá del
-            producto final servido en su taza. Su calidad, cuerpo y sabor es lo
-            mejor que probaras hoy.
-          </p>
-          <a href="#" class="btn">Leer mas</a>          
+          <h3>Cafe de nicaragua</h3>
+          <div class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="precio">$550 <span>$599</span></div>
+          <a href="#" class="btn">Añadir al carrito</a>
         </div>
       </div>
-    </section>
 
-    <section class="productos">
-      <h1 class="encabezado"><span>Nuestros</span> Productos</h1>
+      <div class="box">
+        <div class="iconos">
+          <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
 
-      <div class="categories">
-        <button class="category active">🍵Todas</button>
-        <button class="category" data-category="lates">🥤Lates</button>
-        <button class="category" data-category="cortado">☕Cortados</button>
-        <button class="category" data-category="negros">🍫Negros</button>
-        <button class="category" data-category="molidos">🧆Molidos</button>
-        <button class="category" data-category="granos">🌰En Granos 
-        </button>
+        <div class="imagen">
+          <img src="./assets/img/product-2.png" alt="producto 2" />
+        </div>
+
+        <div class="content">
+          <h3>Cafe de colombia</h3>
+          <div class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="precio">$650 <span>$699</span></div>
+          <a href="#" class="btn">Añadir al carrito</a>
+        </div>
       </div>
 
-    </section>
-
-    <section class="menu" id="menu">
-      <h1 class="encabezado"><span>Nuestro</span> Menu</h1>
-
-      <div class="box-container">
-        <div class="box">
-          <img src="./assets/img/menu-1.png" alt="menu 1" />
-          <h3>Cafe con leche</h3>
-          <div class="precio">$250 <span>$299</span></div>
-          <a href="#" class="btn">Añadir al carrito</a>
+      <div class="box">
+        <div class="iconos">
+          <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
         </div>
 
-        <div class="box">
-          <img src="./assets/img/menu-2.png" alt="menu 2" />
-          <h3>Cafe americano</h3>
-          <div class="precio">$200 <span>$249</span></div>
-          <a href="#" class="btn">Añadir al carrito</a>
+        <div class="imagen">
+          <img src="./assets/img/product-3.png" alt="producto 3" />
         </div>
 
-        <div class="box">
-          <img src="./assets/img/menu-3.png" alt="menu 3" />
-          <h3>Cafe expreso</h3>
-          <div class="precio">$350 <span>$399</span></div>
-          <a href="#" class="btn">Añadir al carrito</a>
-        </div>
-
-        <div class="box">
-          <img src="./assets/img/menu-4.png" alt="menu 4" />
-          <h3>Cappuccino</h3>
-          <div class="precio">$350 <span>$399</span></div>
-          <a href="#" class="btn">Añadir al carrito</a>
-        </div>
-
-        <div class="box">
-          <img src="./assets/img/menu-5.png" alt="menu 5" />
-          <h3>Cafe au lait</h3>
-          <div class="precio">$250 <span>$299</span></div>
-          <a href="#" class="btn">Añadir al carrito</a>
-        </div>
-
-        <div class="box">
-          <img src="./assets/img/menu-6.png" alt="menu 6" />
-          <h3>Cafe irish</h3>
+        <div class="content">
+          <h3>Cafe de peru</h3>
+          <div class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
           <div class="precio">$450 <span>$499</span></div>
           <a href="#" class="btn">Añadir al carrito</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="productos" id="productos">
-      <h1 class="encabezado"><span>Nuestro</span> Productos</h1>
+  <section class="opiniones" id="opiniones">
+    <h1 class="encabezado"><span>Opinion</span> de Clientes</h1>
 
-      <div class="box-container">
-        <div class="box">
-          <div class="iconos">
-            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-
-          <div class="imagen">
-            <img src="./assets/img/product-1.png" alt="producto 1" />
-          </div>
-
-          <div class="content">
-            <h3>Cafe de nicaragua</h3>
-            <div class="estrellas">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="precio">$550 <span>$599</span></div>
-            <a href="#" class="btn">Añadir al carrito</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="iconos">
-            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-
-          <div class="imagen">
-            <img src="./assets/img/product-2.png" alt="producto 2" />
-          </div>
-
-          <div class="content">
-            <h3>Cafe de colombia</h3>
-            <div class="estrellas">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="precio">$650 <span>$699</span></div>
-            <a href="#" class="btn">Añadir al carrito</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="iconos">
-            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-
-          <div class="imagen">
-            <img src="./assets/img/product-3.png" alt="producto 3" />
-          </div>
-
-          <div class="content">
-            <h3>Cafe de peru</h3>
-            <div class="estrellas">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="precio">$450 <span>$499</span></div>
-            <a href="#" class="btn">Añadir al carrito</a>
-          </div>
+    <div class="box-container">
+      <div class="box">
+        <img src="./assets/img/citar-img.png" alt="citar" class="citar" />
+        <p>
+          Era la primera vez que realizaba un pedido online y desde luego que
+          repetiré. El pedido estaba preparado a tiempo. Todo según lo
+          esperado, todo fantástico
+        </p>
+        <img src="./assets/img/persona-1.png" class="usuario" alt="perona 1" />
+        <h3>Ariel Francisco</h3>
+        <div class="estrellas">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
         </div>
       </div>
-    </section>
 
-    <section class="opiniones" id="opiniones">
-      <h1 class="encabezado"><span>Opinion</span> de Clientes</h1>
+      <div class="box">
+        <img src="./assets/img/citar-img.png" alt="citar" class="citar" />
+        <p>
+          El servicio es atentísimo y muy profesional y todo lo que hemos
+          tomado ha sido muy bueno, y a buen precio. Esta persona ya tiene su
+          cafetería de referencia. Me encanto!
+        </p>
+        <img src="./assets/img/persona-2.png" class="usuario" alt="perona 2" />
+        <h3>Martina Nicole</h3>
+        <div class="estrellas">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
 
-      <div class="box-container">
-        <div class="box">
-          <img src="./assets/img/citar-img.png" alt="citar" class="citar" />
+      <div class="box">
+        <img src="./assets/img/citar-img.png" alt="citar" class="citar" />
+        <p>
+          El pedido que realice me lo enviaron con rapides, con una buena
+          presentacion y todo bien cerrado, no tube ningun problema. Volveria
+          a comprar en este sitio. Felicidades, van mis estrellas.
+        </p>
+        <img src="./assets/img/persona-3.png" class="usuario" alt="perona 3" />
+        <h3>Agustin Torres</h3>
+        <div class="estrellas">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blogs" id="blogs">
+    <h1 class="encabezado"><span>nuestro</span> Blogs</h1>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="imagen">
+          <img src="./assets/img/blog-1.jpeg" alt="imagen blog 1" />
+        </div>
+
+        <div class="content">
+          <a href="#" class="titulo">Delicado y frutal en tamaño espresso</a>
+          <span>por admin / 3 Oct, 2022</span>
           <p>
-            Era la primera vez que realizaba un pedido online y desde luego que
-            repetiré. El pedido estaba preparado a tiempo. Todo según lo
-            esperado, todo fantástico
+            Delicadeza con carácter: así se define la variedad Espresso de,
+            creada con granos arábicos de Brasil y una intensidad de cinco
+            puntos. Según la descripción, “debajo de la delicada espuma
+            aterciopelada se encuentra un espresso sorprendentemente
+            característico con notas altas de granada y de nuez tostada, una
+            firma aromática sutil...
           </p>
-          <img
-            src="./assets/img/persona-1.png"
-            class="usuario"
-            alt="perona 1"
-          />
-          <h3>Ariel Francisco</h3>
-          <div class="estrellas">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
+          <a href="#" class="btn">leer mas</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="imagen">
+          <img src="./assets/img/blog-2.jpeg" alt="imagen blog 2" />
         </div>
 
-        <div class="box">
-          <img src="./assets/img/citar-img.png" alt="citar" class="citar" />
+        <div class="content">
+          <a href="#" class="titulo">Café y cigarrillo: juntos a la par</a>
+          <span>por admin / 5 Oct, 2022</span>
           <p>
-            El servicio es atentísimo y muy profesional y todo lo que hemos
-            tomado ha sido muy bueno, y a buen precio. Esta persona ya tiene su
-            cafetería de referencia. Me encanto!
+            La película Coffee and Cigarettes lo supo primero: habría un
+            vínculo entre los vicios. Según un estudio de la Universidad de
+            Florida, algunos fumadores encuentran su primer cigarrillo diario
+            menos placentero si no va acompañado por una taza de café. Y eso
+            es porque los compuestos del café tostado y molido...
           </p>
-          <img
-            src="./assets/img/persona-2.png"
-            class="usuario"
-            alt="perona 2"
-          />
-          <h3>Yanina Borda</h3>
-          <div class="estrellas">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
+          <a href="#" class="btn">leer mas</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="imagen">
+          <img src="./assets/img/blog-3.jpeg" alt="imagen blog 3" />
         </div>
 
-        <div class="box">
-          <img src="./assets/img/citar-img.png" alt="citar" class="citar" />
+        <div class="content">
+          <a href="#" class="titulo">El café de Bolivia viene llegando</a>
+          <span>por admin / 9 Oct, 2022</span>
           <p>
-            El pedido que realice me lo enviaron con rapides, con una buena
-            presentacion y todo bien cerrado, no tube ningun problema. Volveria
-            a comprar en este sitio. Felicidades, van mis estrellas.
+            Cambio climático, dólar y cupo de importaciones (y un sabor único,
+            agregaría yo). Esta semana, el diario La Nación publicó una nota
+            larga sobre el lento pero sostenido ingreso del café de Bolivia
+            hacia la Argentina y destaca dos cualidades para el cultivo del
+            grano de especialidad en el país vecino: un régimen de lluvias
+            amplio...
           </p>
-          <img
-            src="./assets/img/persona-3.png"
-            class="usuario"
-            alt="perona 3"
-          />
-          <h3>Agustin Torres</h3>
-          <div class="estrellas">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
+          <a href="#" class="btn">leer mas</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="blogs" id="blogs">
-      <h1 class="encabezado"><span>nuestro</span> Blogs</h1>
+  <section class="contacto" id="contacto">
+    <h1 class="encabezado"><span>Contactanos</span></h1>
 
-      <div class="box-container">
-        <div class="box">
-          <div class="imagen">
-            <img src="./assets/img/blog-1.jpeg" alt="imagen blog 1" />
-          </div>
+    <div class="contacto-info">
+      <iframe class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55742.579309884684!2d-59.700609480460386!3d-29.167288724238276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eba9a3ba2dbab%3A0x350cd5b5c9792e95!2sReconquista%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1665253519749!5m2!1ses-419!2sar"
+        allowfullscreen="" loading="lazy">
+      </iframe>
 
-          <div class="content">
-            <a href="#" class="titulo">Delicado y frutal en tamaño espresso</a>
-            <span>por admin / 3 Oct, 2022</span>
-            <p>
-              Delicadeza con carácter: así se define la variedad Espresso de,
-              creada con granos arábicos de Brasil y una intensidad de cinco
-              puntos. Según la descripción, “debajo de la delicada espuma
-              aterciopelada se encuentra un espresso sorprendentemente
-              característico con notas altas de granada y de nuez tostada, una
-              firma aromática sutil...
-            </p>
-            <a href="#" class="btn">leer mas</a>
-          </div>
+      <form action="">
+        <h3>Pongase en contacto con nosotros</h3>
+        <div class="inputBox">
+          <span class="fa fa fa-user"></span>
+          <input type="text" placeholder="nombres" />
+        </div>
+        <div class="inputBox">
+          <span class="fa fa fa-user"></span>
+          <input type="text" placeholder="apellido" />
+        </div>
+        <div class="inputBox">
+          <span class="fa fa fa-envelope"></span>
+          <input type="email" placeholder="email" />
+        </div>
+        <div class="inputBox">
+          <span class="fa fa fa-phone"></span>
+          <input type="number" placeholder="numero" />
         </div>
 
-        <div class="box">
-          <div class="imagen">
-            <img src="./assets/img/blog-2.jpeg" alt="imagen blog 2" />
-          </div>
+        <input type="submit" value="contactanos" class="btn" />
+      </form>
+    </div>
+  </section>
 
-          <div class="content">
-            <a href="#" class="titulo">Café y cigarrillo: juntos a la par</a>
-            <span>por admin / 5 Oct, 2022</span>
-            <p>
-              La película Coffee and Cigarettes lo supo primero: habría un
-              vínculo entre los vicios. Según un estudio de la Universidad de
-              Florida, algunos fumadores encuentran su primer cigarrillo diario
-              menos placentero si no va acompañado por una taza de café. Y eso
-              es porque los compuestos del café tostado y molido...
-            </p>
-            <a href="#" class="btn">leer mas</a>
-          </div>
-        </div>
+  <footer class="footer">
 
-        <div class="box">
-          <div class="imagen">
-            <img src="./assets/img/blog-3.jpeg" alt="imagen blog 3" />
-          </div>
+    <div class="redes">
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+    </div>
 
-          <div class="content">
-            <a href="#" class="titulo">El café de Bolivia viene llegando</a>
-            <span>por admin / 9 Oct, 2022</span>
-            <p>
-              Cambio climático, dólar y cupo de importaciones (y un sabor único,
-              agregaría yo). Esta semana, el diario La Nación publicó una nota
-              larga sobre el lento pero sostenido ingreso del café de Bolivia
-              hacia la Argentina y destaca dos cualidades para el cultivo del
-              grano de especialidad en el país vecino: un régimen de lluvias
-              amplio...
-            </p>
-            <a href="#" class="btn">leer mas</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="footer-links">
+      <a href="#">Terminos de uso</a>
+      <a href="#">Trabaja con Nosotros</a>
+      <a href="#">Soporte</a>
+    </div>
 
-    <section class="contacto" id="contacto">
-      <h1 class="encabezado"><span>Contactanos</span></h1>
+    <img src="./assets/products/alonso.png" alt="">
 
-      <div class="contacto-info">
-        <iframe
-          class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55742.579309884684!2d-59.700609480460386!3d-29.167288724238276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eba9a3ba2dbab%3A0x350cd5b5c9792e95!2sReconquista%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1665253519749!5m2!1ses-419!2sar"
-          allowfullscreen=""
-          loading="lazy"
-        >
-        </iframe>
+    <div class="creditos">hecho por <span>Ariel Francisco Zoni</span> | todos los derechos reservados</div>
+  </footer>
+  <div class="add-modal"></div>
+  <script src="./assets/products.js"></script>
+  <script src="./assets/index.js"></script>
+</body>
 
-        <form action="">
-          <h3>Pongase en contacto con nosotros</h3>
-          <div class="inputBox">
-            <span class="fa fa fa-user"></span>
-            <input type="text" placeholder="nombres" />
-          </div>
-          <div class="inputBox">
-            <span class="fa fa fa-user"></span>
-            <input type="text" placeholder="apellido" />
-          </div>
-          <div class="inputBox">
-            <span class="fa fa fa-envelope"></span>
-            <input type="email" placeholder="email" />
-          </div>
-          <div class="inputBox">
-            <span class="fa fa fa-phone"></span>
-            <input type="number" placeholder="numero" />
-          </div>
-
-          <input type="submit" value="contactanos" class="btn" />
-        </form>
-      </div>
-    </section>
-
-    <footer class="footer">
-
-      <div class="redes">
-        <a href="#" class="fab fa-facebook"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>        
-      </div>      
-
-      <div class="footer-links">
-        <a href="#">Terminos de uso</a>
-        <a href="#">Trabaja con Nosotros</a>
-        <a href="#">Soporte</a>
-        </div>
-
-      <div class="creditos">hecho por <span>Ariel Francisco Zoni</span> | todos los derechos reservados</div>
-    </footer>
-  </body>
 </html>

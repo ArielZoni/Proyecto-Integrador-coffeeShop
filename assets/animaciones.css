@@ -1,95 +1,111 @@
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 9rem;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 9rem;
-    left: 0;    
+    left: 0;
     height: 100vh;
     width: 100%;
     z-index: 1;
 
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 140, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 140, 0.3);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     display: none;
 }
 
-#cart-toggle:checked ~ .overlay{
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa.*/
+.show-overlay {
     display: block;
 }
 
-#menu-toggle:checked ~ .overlay{
+#cart-toggle:checked ~ .overlay {
     display: block;
 }
 
-.menu-label:hover{
+#menu-toggle:checked ~ .overlay {
+    display: block;
+}
+
+.menu-label:hover {
     color: var(--main-color);
 }
 
-.cart-label:hover{
+.cart-label:hover {
     color: var(--main-color);
+}
+
+.btn-load {
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+}
+
+.btn-load:hover {
+    background-color: var(--main-color);
+    color: var(--text-white);
+    transition: all 0.2s ease-in;
+}
+
+.btn-add:hover {
+    background-color: var(--black);
+    transition: all 0.2s ease-in;
 }
 
 @keyframes fade {
-    from{
+    from {
         opacity: 0;
     }
     to {
         opacity: 1;
     }
-    
 }
 
-@keyframes slide-up{
-    0%{
+@keyframes slide-up {
+    0% {
         transform: translateY(100px);
     }
-    100%{
+    100% {
         transform: translateY(0);
     }
-    
 }
 
-@keyframes slide-right{
-    from{
+@keyframes slide-right {
+    from {
         transform: translateX(100px);
     }
-    to{
+    to {
         transform: translateX(0);
     }
 }
 
-.home .content h3{
+.home .content h3 {
     animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
 }
 
-.home .content p{
-    animation: fade 1s ease-in forwards, slide-up 1.5s ease-in-out;    
+.home .content p {
+    animation: fade 1s ease-in forwards, slide-up 1.5s ease-in-out;
 }
 
-.home .content a{
-    animation: fade 1s ease-in forwards, slide-up 1.7s ease-in-out; 
+.home .content a {
+    animation: fade 1s ease-in forwards, slide-up 1.7s ease-in-out;
 }
 
-.encabezado-info{
-    animation: fade 1s ease-in forwards, slide-up 1.3s ease-in-out; 
-}
-
-.menu .box-container{
-    animation: fade 1s ease-in forwards, slide-up 1.3s ease-in-out; 
-}
-
-.box{
+.encabezado-info {
     animation: fade 1s ease-in forwards, slide-up 1.3s ease-in-out;
 }
 
-.contacto-info{
+.menu .box-container {
     animation: fade 1s ease-in forwards, slide-up 1.3s ease-in-out;
 }
 
+.box {
+    animation: fade 1s ease-in forwards, slide-up 1.3s ease-in-out;
+}
 
-
+.contacto-info {
+    animation: fade 1s ease-in forwards, slide-up 1.3s ease-in-out;
+}
