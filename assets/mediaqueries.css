@@ -119,6 +119,12 @@
 		font-size: 15px;
 	}
 
+	.box .panific img{
+		height: 250px;
+		width: 230px;
+		border-radius: 10px;
+	}
+
 	.galeria{
 		display: flex;
 		width: 600px;
