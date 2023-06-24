@@ -23,13 +23,16 @@ html {
     display: block;
 }
 
-#cart-toggle:checked ~ .overlay {
-    display: block;
-}
-
-#menu-toggle:checked ~ .overlay {
-    display: block;
-}
+/*Botones del carrito*/
+.quantity-handler {
+    transition: all 0.2s ease-in;
+  }
+  
+  .quantity-handler:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    transition: all 0.2s ease-in;
+  }
 
 .menu-label:hover {
     color: var(--main-color);
